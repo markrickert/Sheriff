@@ -28,7 +28,8 @@
 //    self.badgeView.font = [UIFont fontWithName:@"OpenSans-Semibold" size:18];
 //    self.badgeView.backgroundColor = [UIColor colorWithRed:49/255.0 green:69/255.0 blue:122/255.0 alpha:1.0];
 
-//    self.badgeView.shadowOffset = CGSizeMake(5.0f, 5.0f);
+//    self.badgeView.shadowColor = [UIColor blackColor];
+//    self.badgeView.shadowOffset = CGSizeMake(3.0f, 3.0f);
 //    self.badgeView.shadowRadius = 3.0f;
 //    self.badgeView.shadowOpacity = 0.5f;
 
