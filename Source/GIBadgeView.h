@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface GIBadgeView : UIView
 
@@ -28,6 +29,14 @@
  */
 @property (nonatomic, strong) UIFont *font;
 
+
+/**
+ * a shadow to apply to the badge
+ */
+@property (nonatomic, strong) UIColor *shadowColor;
+@property (nonatomic) CGSize shadowOffset;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGFloat shadowOpacity;
 
 /**
  * Increment the badge value, which will result in the badge being displayed if the current value is zero.
