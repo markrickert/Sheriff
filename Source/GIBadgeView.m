@@ -68,6 +68,12 @@ static CGFloat const kBadgeViewDefaultFontSize = 12.0;
     // Defaults for the corner offset
     self.topOffset = 0.0f;
     self.rightOffset = 0.0f;
+
+    // Defaults for Shadow
+    self.shadowColor = [UIColor clearColor];
+    self.shadowOffset = CGSizeZero;
+    self.shadowRadius = 0.0f;
+    self.shadowOpacity = 0.0f;
 }
 
 - (void)setTextColor:(UIColor *)textColor {
@@ -114,6 +120,15 @@ static CGFloat const kBadgeViewDefaultFontSize = 12.0;
     // Center the badge label.
     //
     self.valueLabel.frame = CGRectMake((width / 2.0) - (badgeLabelWidth / 2.0), (height / 2.0) - (badgeLabelHeight / 2.0), badgeLabelWidth, badgeLabelHeight);
+    
+    if(!CGSizeEqualToSize(self.shadowOffset, CGSizeZero)) {
+        self.layer.shadowColor = self.shadowColor.CGColor;
+        self.layer.shadowOffset = self.shadowOffset;
+        self.layer.shadowRadius = self.shadowRadius;
+        self.layer.shadowOpacity = self.shadowOpacity;
+        self.layer.masksToBounds = NO;
+        self.layer.shouldRasterize = YES;
+    }
 }
 
 

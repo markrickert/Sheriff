@@ -42,6 +42,10 @@ static NSTimeInterval const kAnimationTestDelay = 0.3;
     XCTAssertNotNil(badgeView.textColor);
     XCTAssertEqual(badgeView.topOffset, 0.0f);
     XCTAssertEqual(badgeView.rightOffset, 0.0f);
+    XCTAssertTrue(CGSizeEqualToSize(badgeView.shadowOffset, CGSizeZero));
+    XCTAssertEqual(badgeView.shadowOpacity, 0.0f);
+    XCTAssertEqual(badgeView.shadowRadius, 0.0f);
+    XCTAssertTrue([badgeView.shadowColor isEqual:[UIColor clearColor]]);
 }
 
 - (void)testInitWithCoder {
@@ -54,6 +58,10 @@ static NSTimeInterval const kAnimationTestDelay = 0.3;
     XCTAssertNotNil(badgeView.textColor);
     XCTAssertEqual(badgeView.topOffset, 0.0f);
     XCTAssertEqual(badgeView.rightOffset, 0.0f);
+    XCTAssertTrue(CGSizeEqualToSize(badgeView.shadowOffset, CGSizeZero));
+    XCTAssertEqual(badgeView.shadowOpacity, 0.0f);
+    XCTAssertEqual(badgeView.shadowRadius, 0.0f);
+    XCTAssertTrue([badgeView.shadowColor isEqual:[UIColor clearColor]]);
 }
 
 - (void)testSetBadgeValue {

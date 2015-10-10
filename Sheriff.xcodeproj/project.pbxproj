@@ -15,6 +15,7 @@
 		27D862A11B330E2300F1F345 /* SheriffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D862A01B330E2300F1F345 /* SheriffTests.m */; };
 		27D862AD1B330E5400F1F345 /* GIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D862AC1B330E5400F1F345 /* GIBadgeView.m */; };
 		27D862B11B330EAE00F1F345 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D862B01B330EAE00F1F345 /* DemoViewController.m */; };
+		7B1C70281BC97AE5009C8E8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1C70271BC97AE5009C8E8E /* QuartzCore.framework */; };
 		FCE9CDD41B53489A000F6096 /* Sheriff.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE9CDD31B53489A000F6096 /* Sheriff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCE9CDE81B534AD2000F6096 /* GIBadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D862AB1B330E5400F1F345 /* GIBadgeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCE9CDE91B534B2B000F6096 /* GIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D862AC1B330E5400F1F345 /* GIBadgeView.m */; };
@@ -46,6 +47,7 @@
 		27D862AC1B330E5400F1F345 /* GIBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIBadgeView.m; sourceTree = "<group>"; };
 		27D862AF1B330EAE00F1F345 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		27D862B01B330EAE00F1F345 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		7B1C70271BC97AE5009C8E8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FCE9CDCF1B53489A000F6096 /* Sheriff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sheriff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9CDD21B53489A000F6096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCE9CDD31B53489A000F6096 /* Sheriff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sheriff.h; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1C70281BC97AE5009C8E8E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		27D8627E1B330E2300F1F345 = {
 			isa = PBXGroup;
 			children = (
+				7B1C70271BC97AE5009C8E8E /* QuartzCore.framework */,
 				27D862891B330E2300F1F345 /* Source */,
 				27D862AA1B330E3100F1F345 /* Demo */,
 				27D8629D1B330E2300F1F345 /* SheriffTests */,
